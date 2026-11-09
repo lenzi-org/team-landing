@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>SHA — Three engineers. Full-stack, AI, algorithms.</title>
+  <meta name="description" content="One team of three for full-stack & DevOps, AI and computer science. We built Osify (200,000+ medical profiles) and Lenzi (100,000+ users). Bring us the hard part." />
+  <meta name="theme-color" content="#060708" />
+  <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__engineReady)document.documentElement.classList.remove("js")},4000);</script>
+  <meta property="og:title" content="SHA — Three engineers. The whole stack." />
+  <meta property="og:description" content="Full-stack & DevOps, AI and computer science in one team. Already live: Osify, 200,000+ medical profiles. Lenzi, 100,000+ users. Bring us the hard part." />
+  <meta property="og:type" content="website" />
+  <!-- TODO(deploy): once the domain is known, make og:image absolute (https://<domain>/assets/og.jpg) and add og:url + canonical. -->
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="assets/og.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23060708'/%3E%3Ccircle cx='30' cy='50' r='9' fill='%2338d9f5'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%237cf29a'/%3E%3Ccircle cx='70' cy='50' r='9' fill='%23ffb547'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <a class="skip" href="#work">Skip to content</a>
+
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" data-nav>
+    <a class="brand" href="#top" aria-label="SHA — home">
+      <span class="brand__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand__word">SHA</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#team">Team</a>
+      <a href="#services">Services</a>
+    </nav>
+    <a class="btn btn--small" href="#contact">Start a project</a>
+  </header>
+
+  <main id="top">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" data-scene="hero" data-progress>
+      <canvas class="scene__canvas" aria-hidden="true"></canvas>
+      <!-- Higgsfield slot: cinematic hero loop. Enabled when assets/hf/hero-loop.mp4 exists:
+           add src + remove [hidden]. The canvas scene stays as the fallback. -->
+      <video class="hero__video" data-hf-slot="hero-loop" muted loop playsinline preload="none" hidden></video>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="hero__inner wrap">
+        <p class="eyebrow hero-in">
+          <span class="tri" aria-hidden="true"><i></i><i></i><i></i></span>
+          Full-stack &amp; DevOps · AI · Computer science
+        </p>
+        <h1 class="hero__title hero-in">
+          <span class="line">Three engineers.</span>
+          <span class="line line--grad">The whole stack.</span>
+        </h1>
+        <p class="hero__sub hero-in">
+          One team for infrastructure, AI and algorithms, from design to production. Already live:
+          a healthcare platform with <strong>200,000+ medical profiles</strong> and an AI study
+          assistant with <strong>100,000+ users</strong>. Bring us the hard part.
+        </p>
+        <div class="hero__cta hero-in">
+          <a class="btn" href="#contact">Start a project <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="#work">See the work</a>
+        </div>
+      </div>
+
+      <dl class="stats wrap hero-in" aria-label="By the numbers">
+        <div class="stat">
+          <dt>Medical profiles on Osify</dt>
+          <dd><span data-count-to="200000" data-suffix="+">200,000+</span></dd>
+        </div>
+        <div class="stat">
+          <dt>Users on Lenzi</dt>
+          <dd><span data-count-to="100000" data-suffix="+">100,000+</span></dd>
+        </div>
+        <div class="stat">
+          <dt>Products shipped</dt>
+          <dd><span data-count-to="4">4</span></dd>
+        </div>
+        <div class="stat">
+          <dt>Disciplines, one team</dt>
+          <dd><span data-count-to="3">3</span></dd>
+        </div>
+      </dl>
+
+      <div class="scroll-hint" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- ============================== STACK MARQUEE ============================== -->
+    <section class="marquee" aria-label="Technologies we work with">
+      <div class="marquee__track">
+        <ul>
+          <li>Django</li><li class="sep">◆</li>
+          <li>Next.js</li><li class="sep">◆</li>
+          <li>Docker</li><li class="sep">◆</li>
+          <li>Kubernetes</li><li class="sep">◆</li>
+          <li>PyTorch</li><li class="sep">◆</li>
+          <li>Computer Vision</li><li class="sep">◆</li>
+          <li>LLMs</li><li class="sep">◆</li>
+          <li>CI/CD</li><li class="sep">◆</li>
+          <li>Algorithms</li><li class="sep">◆</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Django</li><li class="sep">◆</li>
+          <li>Next.js</li><li class="sep">◆</li>
+          <li>Docker</li><li class="sep">◆</li>
+          <li>Kubernetes</li><li class="sep">◆</li>
+          <li>PyTorch</li><li class="sep">◆</li>
+          <li>Computer Vision</li><li class="sep">◆</li>
+          <li>LLMs</li><li class="sep">◆</li>
+          <li>CI/CD</li><li class="sep">◆</li>
+          <li>Algorithms</li><li class="sep">◆</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== WORK ============================== -->
+    <section class="work" id="work">
+      <header class="section-head wrap">
+        <p class="eyebrow reveal">Selected work</p>
+        <h2 class="section-title reveal">Not mockups. <span class="muted">Products in production.</span></h2>
+      </header>
+
+      <!-- Osify -->
+      <article class="case wrap" data-progress style="--case-accent: var(--infra)">
+        <div class="case__media reveal">
+          <div class="device device--browser">
+            <div class="device__bar"><i></i><i></i><i></i><span>osifyai.com/en</span></div>
+            <img src="assets/work/osify-desktop.webp" alt="Osify home page: find and book the right doctor in minutes" loading="lazy" width="1440" height="900" />
+          </div>
+          <div class="device device--phone device--float">
+            <img src="assets/work/osify-mobile.webp" alt="Osify on mobile" loading="lazy" width="390" height="844" />
+          </div>
+        </div>
+        <div class="case__body">
+          <p class="case__index reveal">01 — Healthcare platform</p>
+          <h3 class="case__title reveal">Osify</h3>
+          <p class="case__metric reveal"><span data-count-to="200000" data-suffix="+">200,000+</span><small>medical profiles</small></p>
+          <p class="case__text reveal">
+            Doctor search and online booking. Patients find verified specialists by city and
+            specialty, compare profiles and book a visit in minutes. One platform in English, German
+            and Persian, with a health blog built in.
+          </p>
+          <ul class="tags reveal"><li>Search &amp; booking</li><li>EN · DE · FA</li><li>Health blog</li></ul>
+          <a class="case__link reveal" href="https://osifyai.com/en" target="_blank" rel="noopener">Visit osifyai.com <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <!-- Lenzi -->
+      <article class="case case--flip wrap" data-progress style="--case-accent: var(--ai)">
+        <div class="case__media reveal">
+          <div class="device device--browser">
+            <div class="device__bar"><i></i><i></i><i></i><span>lenzi.app</span></div>
+            <img src="assets/work/lenzi-desktop.webp" alt="Lenzi home page: AI study assistant" loading="lazy" width="1440" height="900" />
+          </div>
+          <div class="device device--phone device--float">
+            <img src="assets/work/lenzi-mobile.webp" alt="Lenzi on mobile" loading="lazy" width="390" height="844" />
+          </div>
+        </div>
+        <div class="case__body">
+          <p class="case__index reveal">02 — AI in education</p>
+          <h3 class="case__title reveal">Lenzi</h3>
+          <p class="case__metric reveal"><span data-count-to="100000" data-suffix="+">100,000+</span><small>users</small></p>
+          <p class="case__text reveal">
+            An AI study assistant for grades 10–12, every subject, all the way to Konkur prep.
+            Students photograph an exercise; Lenzi solves it and teaches the concept step by step.
+            Teachers hand it the exams: it runs them, grades the answer sheets and builds analytical
+            report cards.
+          </p>
+          <ul class="tags reveal"><li>Photo → solution</li><li>Auto-grading</li><li>Report cards</li></ul>
+          <a class="case__link reveal" href="https://lenzi.app" target="_blank" rel="noopener">Visit lenzi.app <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <!-- Launch pages -->
+      <div class="launches wrap">
+        <header class="launches__head">
+          <p class="case__index reveal">03 — Cinematic launch concepts</p>
+          <h3 class="case__title reveal">Scroll is the camera.</h3>
+          <p class="case__text reveal">
+            Launch pages that take the product apart as you scroll: 240-frame sequences, scrubbed in
+            real time. Built for hardware that has to feel expensive before anyone clicks.
+          </p>
+        </header>
+
+        <article class="launch" data-progress style="--case-accent: var(--cs)">
+          <div class="frame-player reveal" data-frames="assets/work/obsidian/" data-count="48" data-pad="3" data-ext="webp" data-poster="assets/work/obsidian/001.webp">
+            <canvas aria-hidden="true"></canvas>
+            <img class="frame-player__poster" src="assets/work/obsidian/001.webp" alt="OBSIDIAN R1 keyboard, deconstructed layer by layer" loading="lazy" />
+            <span class="frame-player__hud">FRAME <b data-frame-label>001</b> / 240</span>
+          </div>
+          <div class="launch__body">
+            <h4 class="launch__title reveal">OBSIDIAN R1</h4>
+            <p class="launch__text reveal">A 75% aluminum mechanical keyboard. Scroll, and it separates into its six layers.</p>
+            <a class="case__link reveal" href="https://keyboard-hs.netlify.app/" target="_blank" rel="noopener">Open live page <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="launch" data-progress style="--case-accent: var(--cs)">
+          <div class="frame-player reveal" data-frames="assets/work/chronos/" data-count="48" data-pad="3" data-ext="webp" data-poster="assets/work/chronos/001.webp">
+            <canvas aria-hidden="true"></canvas>
+            <img class="frame-player__poster" src="assets/work/chronos/001.webp" alt="CHRONOS 1853 PR100 watch, exploded into 187 parts" loading="lazy" />
+            <span class="frame-player__hud">FRAME <b data-frame-label>001</b> / 240</span>
+          </div>
+          <div class="launch__body">
+            <h4 class="launch__title reveal">CHRONOS 1853 · PR100</h4>
+            <p class="launch__text reveal">A dress-watch launch: 187 parts exploded and reassembled, frame by frame, on scroll.</p>
+            <a class="case__link reveal" href="https://watch-hs.netlify.app/" target="_blank" rel="noopener">Open live page <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== TEAM ============================== -->
+    <section class="team-intro wrap" id="team">
+      <p class="eyebrow reveal">The team</p>
+      <h2 class="section-title reveal">Three disciplines.<br /><span class="muted">One pipeline.</span></h2>
+      <p class="lead reveal">
+        Infrastructure, models that see and reason, and the algorithms underneath both. Each layer
+        has one owner. Scroll to meet them.
+      </p>
+    </section>
+
+    <!-- 01 · Samim — Infrastructure scene -->
+    <section class="scene scene--infra" data-scene="servers" data-progress
+             data-accent="#38d9f5" data-portrait="assets/team/samim.webp"
+             aria-labelledby="samim-name" style="--accent: var(--infra); --accent-rgb: var(--infra-rgb)">
+      <div class="scene__sticky">
+        <canvas class="scene__canvas" aria-hidden="true"></canvas>
+        <div class="scene__captions" aria-hidden="true">
+          <div class="cap" data-from="0" data-to="0.2"><p class="cap__k">01 / Infrastructure</p><p class="cap__t">It starts with one server.</p></div>
+          <div class="cap" data-from="0.2" data-to="0.45"><p class="cap__k">load balancer → app → cache → db</p><p class="cap__t">Then the requests pour in.</p></div>
+          <div class="cap" data-from="0.45" data-to="0.66"><p class="cap__k">kubectl scale · 3 → 12 pods</p><p class="cap__t">Traffic spikes. The cluster scales itself.</p></div>
+          <div class="cap" data-from="0.66" data-to="0.8"><p class="cap__k">git push → production</p><p class="cap__t">And behind every deploy —</p></div>
+        </div>
+        <article class="person" data-from="0.8" data-to="1.01">
+          <p class="person__k">01 · Full-stack &amp; DevOps</p>
+          <h3 class="person__name" id="samim-name">Samim Sanaei</h3>
+          <p class="person__bio">
+            Samim owns the path from commit to production. He builds in Django and Next.js, ships
+            in Docker, orchestrates on Kubernetes and automates the rest with CI/CD. Deploys stay
+            boring, even when the traffic stops being polite.
+          </p>
+          <ul class="tags"><li>Django</li><li>Next.js</li><li>Docker</li><li>Kubernetes</li><li>CI/CD</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 · Hooman — Vision / AI scene -->
+    <section class="scene scene--ai" data-scene="vision" data-progress
+             data-accent="#7cf29a" data-portrait="assets/team/hooman.webp"
+             data-face="0.34,0.15,0.66,0.50"
+             aria-labelledby="hooman-name" style="--accent: var(--ai); --accent-rgb: var(--ai-rgb)">
+      <div class="scene__sticky">
+        <canvas class="scene__canvas" aria-hidden="true"></canvas>
+        <div class="scene__captions" aria-hidden="true">
+          <div class="cap" data-from="0" data-to="0.18"><p class="cap__k">02 / Artificial intelligence</p><p class="cap__t">Raw pixels. No meaning yet.</p></div>
+          <div class="cap" data-from="0.18" data-to="0.38"><p class="cap__k">conv1 · 3×3 · edges</p><p class="cap__t">The first layer finds edges.</p></div>
+          <div class="cap" data-from="0.38" data-to="0.58"><p class="cap__k">conv2 … conv5 · feature maps</p><p class="cap__t">Deeper layers find meaning.</p></div>
+          <div class="cap" data-from="0.58" data-to="0.78"><p class="cap__k">llm · describe(image)</p><p class="cap__t">Then a language model describes it.</p></div>
+        </div>
+        <article class="person" data-from="0.8" data-to="1.01">
+          <p class="person__k">02 · AI / Machine learning</p>
+          <h3 class="person__name" id="hooman-name">Hooman Khoshbin</h3>
+          <p class="person__bio">
+            Hooman builds models that see, read and reason, in PyTorch: computer vision, machine
+            learning, large language models. Then he does the part most demos skip: getting them out
+            of the notebook and into production.
+          </p>
+          <ul class="tags"><li>PyTorch</li><li>Computer vision</li><li>LLMs</li><li>Machine learning</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 · Arshia — Algorithms scene -->
+    <section class="scene scene--cs" data-scene="algo" data-progress
+             data-accent="#ffb547" data-portrait="assets/team/arshia.webp"
+             aria-labelledby="arshia-name" style="--accent: var(--cs); --accent-rgb: var(--cs-rgb)">
+      <div class="scene__sticky">
+        <canvas class="scene__canvas" aria-hidden="true"></canvas>
+        <div class="scene__captions" aria-hidden="true">
+          <div class="cap" data-from="0" data-to="0.25"><p class="cap__k">03 / Computer science</p><p class="cap__t">A graph with thousands of paths.</p></div>
+          <div class="cap" data-from="0.25" data-to="0.5"><p class="cap__k">dijkstra · O((V + E) log V)</p><p class="cap__t">Only one is optimal. Find it.</p></div>
+          <div class="cap" data-from="0.5" data-to="0.76"><p class="cap__k">national university entrance exam</p><p class="cap__t">Ranked 61st. In the entire country.</p></div>
+        </div>
+        <article class="person" data-from="0.8" data-to="1.01">
+          <p class="person__k">03 · Computer science</p>
+          <h3 class="person__name" id="arshia-name">Arshia Dehghan</h3>
+          <p class="person__bio">
+            Arshia ranked 61st nationally in Konkur, the university entrance exam, then studied
+            Computer Engineering at Sharif University of Technology, Iran's top engineering school.
+            Algorithms, data structures, complexity analysis: he makes hard problems small.
+          </p>
+          <ul class="tags"><li>Rank 61 · Konkur</li><li>Sharif CE</li><li>Algorithms</li><li>Data structures</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== SERVICES ============================== -->
+    <section class="services wrap" id="services">
+      <header class="section-head">
+        <p class="eyebrow reveal">What you can hire us for</p>
+        <h2 class="section-title reveal">From first commit<br /><span class="muted">to the hundred-thousandth user.</span></h2>
+      </header>
+      <div class="cards">
+        <article class="card reveal" style="--card-accent: var(--infra)">
+          <span class="card__n">01</span>
+          <h3>Products that survive success</h3>
+          <p>Web products on Django and Next.js, designed for the traffic you're planning for, not the traffic you have today.</p>
+        </article>
+        <article class="card reveal" style="--card-accent: var(--ai)">
+          <span class="card__n">02</span>
+          <h3>AI that actually ships</h3>
+          <p>Computer vision, ML and LLM features built in PyTorch and wired into your product, then evaluated, deployed and monitored like any other code.</p>
+        </article>
+        <article class="card reveal" style="--card-accent: var(--infra)">
+          <span class="card__n">03</span>
+          <h3>DevOps without drama</h3>
+          <p>Containerized with Docker, orchestrated on Kubernetes, shipped through CI/CD. Releasing becomes routine; scaling becomes a config change.</p>
+        </article>
+        <article class="card reveal" style="--card-accent: var(--cs)">
+          <span class="card__n">04</span>
+          <h3>Launch pages that stop the scroll</h3>
+          <p>Frame-by-frame, scroll-scrubbed stories that take your product apart in front of the buyer.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="contact" id="contact" data-progress>
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="wrap contact__inner">
+        <p class="eyebrow reveal">
+          <span class="tri" aria-hidden="true"><i></i><i></i><i></i></span>
+          Now booking new projects
+        </p>
+        <h2 class="contact__title reveal">Have something hard to build?<br /><span class="line--grad">Good. Send us the brief.</span></h2>
+        <div class="hero__cta reveal">
+          <a class="btn btn--icon" href="mailto:info@lenzi.app">
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            info@lenzi.app <span aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn--ghost btn--icon" href="https://t.me/lenzi_app" target="_blank" rel="noopener">
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#26A5E4" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram · @lenzi_app <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span class="brand__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <p>© <span data-year>2026</span> SHA — Samim Sanaei · Hooman Khoshbin · Arshia Dehghan</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <!-- Scripts: no build step. Utilities → scenes (self-registering) → components → engine. -->
+  <script src="js/scene-utils.js" defer></script>
+  <script src="js/scenes/hero.js" defer></script>
+  <script src="js/scenes/servers.js" defer></script>
+  <script src="js/scenes/vision.js" defer></script>
+  <script src="js/scenes/algo.js" defer></script>
+  <script src="js/frame-player.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

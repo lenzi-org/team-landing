@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Design tokens — the single source of truth for color, type, space, motion.
+   Signature colors: one per discipline. They meet in the hero and split
+   into the three team scenes.
+   ========================================================================== */
+:root {
+  /* Surfaces */
+  --bg: #060708;
+  --bg-2: #0a0c0f;
+  --surface: #0f1216;
+  --surface-2: #151920;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-2: rgba(255, 255, 255, 0.14);
+
+  /* Text */
+  --text: #eef0f3;
+  --muted: #9aa1ad;
+  --dim: #5f6673;
+
+  /* Discipline signatures */
+  --infra: #38d9f5;   /* Samim — full-stack & DevOps */
+  --ai: #7cf29a;      /* Hooman — AI / ML / CV / LLM */
+  --cs: #ffb547;      /* Arshia — computer science */
+  --infra-rgb: 56, 217, 245;
+  --ai-rgb: 124, 242, 154;
+  --cs-rgb: 255, 181, 71;
+
+  /* Type */
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: clamp(1.05rem, 0.98rem + 0.35vw, 1.25rem);
+  --fs-xl: clamp(1.4rem, 1.1rem + 1.2vw, 2rem);
+  --fs-2xl: clamp(2rem, 1.4rem + 2.6vw, 3.5rem);
+  --fs-3xl: clamp(2.6rem, 1.6rem + 4.6vw, 6rem);
+  --fs-display: clamp(2.9rem, 1.2rem + 6vw, 7.25rem);
+
+  /* Space & shape */
+  --max: 1240px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --section-y: clamp(96px, 14vw, 200px);
+  --radius: 16px;
+  --radius-lg: 28px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur: 0.8s;
+}
